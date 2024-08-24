@@ -21,24 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
     s.parentNode.insertBefore(gcse, s);
 })();
 
-// Configuración de PayPal
-paypal.Buttons({
-    createOrder: function(data, actions) {
-        return actions.order.create({
-            purchase_units: [{
-                amount: {
-                    value: '10.00' // Reemplaza con el valor de pago
-                }
-            }]
-        });
-    },
-    onApprove: function(data, actions) {
-        return actions.order.capture().then(function(details) {
-            alert('Pago realizado por ' + details.payer.name.given_name);
-        });
-    }
-}).render('#paypal-button');
-
 // Manejo del formulario de reservación
 document.getElementById("reservation-form").addEventListener("submit", function(event){
     event.preventDefault();
