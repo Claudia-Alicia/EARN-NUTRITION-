@@ -78,49 +78,63 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Color de fondo para cada sección */
 .intro {
-    background-color: #e0f7fa; /* Azul claro */
+    background-color: #e0f7fa;
 }
 
 .causes {
-    background-color: #fff3e0; /* Naranja claro */
+    background-color: #fff3e0;
 }
 
 .about {
-    background-color: #fce4ec; /* Rosa claro */
+    background-color: #fce4ec;
 }
 
 .services {
-    background-color: #e8f5e9; /* Verde claro */
+    background-color: #e8f5e9;
 }
 
 .contact {
-    background-color: #fff8e1; /* Amarillo claro */
+    background-color: #fff8e1;
 }
 
 .location {
-    background-color: #f3e5f5; /* Lila claro */
+    background-color: #f3e5f5;
+}
+
+/* Ajuste para la imagen en la sección de ubicación */
+.location .image-container {
+    text-align: center;
+    margin-top: 20px; /* Espacio opcional arriba de la imagen */
+}
+
+.location .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block; /* Asegura que la imagen no tenga márgenes innecesarios */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
 }
 
 .reviews {
-    background-color: #c8e6c9; /* Verde pálido */
+    background-color: #c8e6c9;
 }
 
-/* Ajustes específicos para imágenes en la sección de "Principales causas" */
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #2d8a5f;
+}
+
 .causes-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
 }
 
 .cause {
-    flex: 1 1 calc(33.33% - 20px); /* Ajusta el tamaño de los elementos en la cuadrícula */
+    flex: 1 1 calc(50% - 20px);
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
     gap: 10px;
 }
 
@@ -129,35 +143,59 @@ main {
     height: auto;
 }
 
-/* Ajustes para la imagen en la sección de "Sobre Mí" */
-.about img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+.services-list {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Ajuste para la imagen en la sección de "Servicios" */
+.services-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Ajustar el tamaño de la imagen en la sección de servicios */
+.services .image-container {
+    text-align: center;
+    margin-top: 20px; /* Espacio opcional arriba de la imagen */
+}
+
 .services .image-container img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+    display: block; /* Asegura que la imagen no tenga márgenes innecesarios */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
 }
 
-/* Ajuste para la imagen en la sección de "Ubicación" */
-.location img {
-    max-width: 100%;
-    height: auto;
+/* Agregar un contenedor para centrar la imagen */
+.services img {
+    max-width: 100%; /* Asegura que la imagen no se expanda más allá del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Opcional: agrega bordes redondeados */
+    display: block; /* Asegura que la imagen no tenga márgenes innecesarios */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+}
+
+.whatsapp-button {
+    width: 60px;
+}
+
+#map {
+    margin-top: 20px;
+    position: relative;
+    height: 300px;
     border-radius: 8px;
-    display: block;
-    margin: 0 auto;
+    overflow: hidden;
 }
 
-/* Añadir color de fondo a la sección de calificaciones */
+#map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 .rating {
     margin-bottom: 20px;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 8px;
 }
 
 .stars {
@@ -172,32 +210,6 @@ main {
 .review {
     padding: 10px;
     border-bottom: 1px solid #ddd;
-}
-
-.services .image-container {
-    text-align: center;
-    margin-top: 20px; /* Espacio opcional arriba de la imagen */
-}
-
-.services .image-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    display: block; /* Asegura que la imagen no tenga márgenes innecesarios */
-    margin: 0 auto; /* Centra la imagen dentro del contenedor */
-}
-
-.location .image-container {
-    text-align: center;
-    margin-top: 20px; /* Espacio opcional arriba de la imagen */
-}
-
-.location .image-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    display: block; /* Asegura que la imagen no tenga márgenes innecesarios */
-    margin: 0 auto; /* Centra la imagen dentro del contenedor */
 }
 
 /* Animaciones */
@@ -251,11 +263,6 @@ main {
         max-width: 80px;
     }
 
-    .about img {
-        max-width: 100%;
-        height: auto;
-    }
-    
     /* Ajuste para el logo en dispositivos móviles */
     .header-container {
         justify-content: space-between;
