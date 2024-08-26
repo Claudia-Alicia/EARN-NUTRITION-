@@ -187,6 +187,19 @@ main {
     margin: 0 auto; /* Centra la imagen dentro del contenedor */
 }
 
+.location .image-container {
+    text-align: center;
+    margin-top: 20px; /* Espacio opcional arriba de la imagen */
+}
+
+.location .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block; /* Asegura que la imagen no tenga márgenes innecesarios */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+}
+
 /* Animaciones */
 @keyframes slide-in {
     0% {
