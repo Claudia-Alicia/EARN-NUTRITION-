@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* styles.css */
 body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
@@ -38,7 +38,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 10px;
-    width: 250px; /* Asegúrate de que el menú tenga suficiente ancho */
+    width: 250px;
 }
 
 .menu ul {
@@ -76,6 +76,34 @@ main {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+    background-color: #e0f7fa;
+}
+
+.causes {
+    background-color: #fff3e0;
+}
+
+.about {
+    background-color: #fce4ec;
+}
+
+.services {
+    background-color: #e8f5e9;
+}
+
+.contact {
+    background-color: #fff8e1;
+}
+
+.location {
+    background-color: #f3e5f5;
+}
+
+.reviews {
+    background-color: #c8e6c9;
 }
 
 h2 {
@@ -133,8 +161,18 @@ h2 {
     margin-bottom: 20px;
 }
 
+.stars {
+    color: #ffd700; /* Color dorado para estrellas */
+    font-size: 24px;
+}
+
 .reviews-list {
     margin-top: 20px;
+}
+
+.review {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
 /* Animaciones */
@@ -149,7 +187,7 @@ h2 {
     }
 }
 
-/* Diseño Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
