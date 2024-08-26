@@ -139,6 +139,21 @@ h2 {
     font-size: 16px;
 }
 
+/* Ajustar el tamaño de la imagen en la sección de servicios */
+.services img {
+    max-width: 100%; /* Asegura que la imagen no se expanda más allá del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Opcional: agrega bordes redondeados */
+    display: block; /* Asegura que la imagen no tenga márgenes innecesarios */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+}
+
+/* Agregar un contenedor para centrar la imagen */
+.services .image-container {
+    text-align: center;
+    margin-top: 20px; /* Espacio superior opcional */
+}
+
 .whatsapp-button {
     width: 60px;
 }
