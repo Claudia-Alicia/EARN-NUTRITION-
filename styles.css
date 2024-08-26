@@ -139,7 +139,6 @@ h2 {
   font-size: 16px;
 }
 
-/* Ajustar el tamaño de la imagen en la sección de servicios */
 .services img {
   max-width: 100%;
   height: auto;
@@ -148,8 +147,7 @@ h2 {
   margin: 0 auto;
 }
 
-/* Agregar un contenedor para centrar la imagen */
-.services .image-container {
+.image-container {
   text-align: center;
   margin-top: 20px;
 }
@@ -202,7 +200,6 @@ h2 {
   }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .header-container {
       flex-direction: column;
@@ -239,5 +236,9 @@ h2 {
 
   .cause img {
       max-width: 80px;
+  }
+
+  .services img {
+      max-width: 90%;
   }
 }
